@@ -11,4 +11,4 @@ ADD https://s3-eu-west-1.amazonaws.com/softwaremill-public/elasticmq-server-${VE
 
 VOLUME /etc/elasticmq
 
-CMD ["java", "${ELASTICMQ_CONFIG_FILE}", "-jar", "/elasticmq-server.jar", "${ELASTICMQ_OPTS}"]
+CMD ["java", "-Dconfig.file=/etc/elasticmq/elasticmq.conf", "-jar", "/elasticmq-server.jar", "${ELASTICMQ_OPTS}"]
