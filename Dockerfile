@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:8-alpine
 
 ARG VERSION=0.14.6
 
